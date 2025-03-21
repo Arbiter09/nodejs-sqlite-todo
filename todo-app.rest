@@ -1,0 +1,50 @@
+### GET /
+GET http://localhost:5000/
+
+### Register a user POST /auth/register
+
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+### Login a user POST /auth/login
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+### Get all todos GET /todos (protected)
+GET http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyNTE3MDM0LCJleHAiOjE3NDI2MDM0MzR9.eFC8Nr1ZSPu2cC6hF6MwaeuRYPv8mcKE7FMmF9WHDj0
+
+### Create a todo POST /todos (protected)
+POST http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyNTE3MDM0LCJleHAiOjE3NDI2MDM0MzR9.eFC8Nr1ZSPu2cC6hF6MwaeuRYPv8mcKE7FMmF9WHDj0
+Content-Type: application/json
+
+{
+    "task": "WORK WORK WORK"
+}
+
+### Update a todo PUT /todos/:id (protected)
+PUT http://localhost:5000/todos/2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyNTE3MDM0LCJleHAiOjE3NDI2MDM0MzR9.eFC8Nr1ZSPu2cC6hF6MwaeuRYPv8mcKE7FMmF9WHDj0
+
+{
+    "completed": 1
+}
+
+### Delete a todo DELETE /todos/:id (protected)
+DELETE http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyNTE3MDM0LCJleHAiOjE3NDI2MDM0MzR9.eFC8Nr1ZSPu2cC6hF6MwaeuRYPv8mcKE7FMmF9WHDj0
+
+
