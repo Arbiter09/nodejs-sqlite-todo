@@ -1,6 +1,3 @@
-Here's a README file for your **Node.js + SQLite To-Do App** project, including images.
-
----
 
 ## 📌 Node.js SQLite To-Do App
 
@@ -119,20 +116,9 @@ NODEJS-SQLITE/
 
 ---
 
-## 📌 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m 'Added feature'`)
-4. Push to the branch (`git push origin feature-name`)
-5. Open a **Pull Request**
-
----
 
 ## 📜 License
 
 This project is open-source under the **MIT License**.
 
 ---
-
-This README provides a professional overview, installation steps, API details, and contribution guidelines. Let me know if you need any modifications! 🚀
