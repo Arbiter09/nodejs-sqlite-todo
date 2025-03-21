@@ -48,7 +48,7 @@ NODEJS-SQLITE/
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/your-repo/nodejs-sqlite-todo.git
+   git clone https://github.com/Arbiter09/nodejs-sqlite-todo.git
    cd nodejs-sqlite-todo
    ```
 
